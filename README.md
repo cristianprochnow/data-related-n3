@@ -48,3 +48,5 @@ As colunas abrangem dados diversos sobre a pesquisa, como ano ao qual foi feita 
 Com isso, o primeiro passo para essa transformação é tornar os dados mais acessíveis parea o restante do processo, colocando em formato `.parquet`, para que se encaixe nas categoria `bronze` (`data/bronze`), como é feito no notebook `notebooks/01_injecao_dados.ipynb`.
 
 Após isso, há então o processamento para tornar os dados à categoria `silver` (`data/silver`). Nessa etapa o foco é deixar os dados o mais polidos possíveis para a etapa de interpretação e síntese que vai ocorrer posteriormente. Aqui o lixo vai ser eliminado e também formatações essenciais feitas, como pode ser conferido no notebook `notebooks/02_tratamento_dados.ipynb`.
+
+E então, após o tratamento mais bruto feito na etapa `silver`, o próximo passo é realizar o tratamento mais fino e estratégico sobre os dados em si, então é aqui que o processamento da etapa `gold` (`data/gold`) entra em ação. Os detalhes podem ser confiridos no notebook `notebooks/03_criacao_relacoes.ipynb`.
