@@ -39,10 +39,12 @@ E então, no passo `gold` (pasta `data/gold`) é onde os dados estão prontos pa
 
 Essa arquitetura foi escolhida principalmente pela dinâmica de ao mesmo tempo que separa os dados por "estado", ainda acaba mantendo uma espécie de *log* sobre os estágios que a base passou. Caso seja desejado refazer os dados para a etapa `gold`, por exemplo, basta pegar os dados da etapa `silver` e formatá-los novamente.
 
-## Injeção dos dados
+## Preparação dos dados
 
 O arquivo base disponível - em `data/salaries.csv` - é o *dataset* baixado diretamente do Kaggle, e nessa listagem há a informação contabilizada através da pesquisa com diversos desenvolvedores ao redor do mundo, que trabalham exclusivamente em cargos de IA/ML.
 
 As colunas abrangem dados diversos sobre a pesquisa, como ano ao qual foi feita a pesquisa com aquele indivíduo específico (`work_year`), nível de experiência junto com o tipo (`experience_level` e `employment_type`), salário na moeda local de onde aquele desenvolvedor more, juntamente com a conversão direta para o dólar (`salary` e `salary_in_usd`) e até o país que ele mora em contraste com o da empresa (`employee_residance` e `company_location`).
 
 Com isso, o primeiro passo para essa transformação é tornar os dados mais acessíveis parea o restante do processo, colocando em formato `.parquet`, para que se encaixe nas categoria `bronze` (`data/bronze`), como é feito no notebook `notebooks/01_injecao_dados.ipynb`.
+
+Após isso, há então o processamento para tornar os dados à categoria `silver` (`data/silver`). Nessa etapa o foco é deixar os dados o mais polidos possíveis para a etapa de interpretação e síntese que vai ocorrer posteriormente. Aqui o lixo vai ser eliminado e também formatações essenciais feitas, como pode ser conferido no notebook `notebooks/02_tratamento_dados.ipynb`.
