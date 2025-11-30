@@ -45,4 +45,4 @@ O arquivo base disponível - em `data/salaries.csv` - é o *dataset* baixado dir
 
 As colunas abrangem dados diversos sobre a pesquisa, como ano ao qual foi feita a pesquisa com aquele indivíduo específico (`work_year`), nível de experiência junto com o tipo (`experience_level` e `employment_type`), salário na moeda local de onde aquele desenvolvedor more, juntamente com a conversão direta para o dólar (`salary` e `salary_in_usd`) e até o país que ele mora em contraste com o da empresa (`employee_residance` e `company_location`).
 
-Com isso, o primeiro passo para essa transformação é tornar os dados mais acessíveis parea o restante do processo, colocando em formato `.parquet`, para que se encaixe nas categoria `bronze` (`data/bronze`), como é feito no notebook `01_injecao_dados.ipynb`.
+Com isso, o primeiro passo para essa transformação é tornar os dados mais acessíveis parea o restante do processo, colocando em formato `.parquet`, para que se encaixe nas categoria `bronze` (`data/bronze`), como é feito no notebook `notebooks/01_injecao_dados.ipynb`.
