@@ -1,0 +1,19 @@
+{
+    "R2_Score": 0.154832495827545,
+    "RMSE": 69366.98883382604,
+    "MAE": 51274.62786367906,
+    "Model_Params": {
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "max_depth": 10,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "random_state": 42,
+        "splitter": "best"
+    }
+}
